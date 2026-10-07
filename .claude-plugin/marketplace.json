@@ -3,8 +3,8 @@
   "owner": { "name": "Hidden Door" },
   "plugins": [
     {
-      "name": "creator",
-      "source": "./plugins/creator",
+      "name": "hiddendoor",
+      "source": "./plugins/hiddendoor",
       "description": "Create and develop worlds with Hidden Door."
     }
   ]
