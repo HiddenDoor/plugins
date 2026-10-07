@@ -1,0 +1,11 @@
+{
+  "name": "hiddendoor",
+  "owner": { "name": "Hidden Door" },
+  "plugins": [
+    {
+      "name": "creator",
+      "source": "./plugins/creator",
+      "description": "Create and develop worlds with Hidden Door."
+    }
+  ]
+}

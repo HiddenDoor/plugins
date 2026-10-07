@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hiddendoor": {
+      "type": "http",
+      "url": "https://www.hiddendoor.co/mcp"
+    }
+  }
+}

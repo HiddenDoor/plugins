@@ -1,0 +1,8 @@
+{
+  "name": "creator",
+  "version": "0.1.0",
+  "description": "Create and develop worlds with Hidden Door.",
+  "author": { "name": "Hidden Door" },
+  "homepage": "https://www.hiddendoor.co/mcp",
+  "repository": "https://github.com/HiddenDoor/plugins"
+}
