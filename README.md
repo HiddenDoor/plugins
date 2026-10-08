@@ -15,7 +15,7 @@ claude plugin install hiddendoor
 
 Start a new session, or run `/reload-plugins` in an existing session.
 
-## Keep it updated
+### Keep it updated
 
 In Claude Code, open `/plugin`, select **Marketplaces → hiddendoor**,
 and enable **auto-update**.
@@ -28,3 +28,12 @@ claude plugin update hiddendoor
 ```
 
 Start a new session or run `/reload-plugins` to load the update.
+
+## Install in Codex
+
+Run:
+
+```sh
+codex plugin marketplace add hiddendoor/plugins
+codex plugin install hiddendoor@hiddendoor
+```
