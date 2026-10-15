@@ -35,5 +35,5 @@ Run:
 
 ```sh
 codex plugin marketplace add hiddendoor/plugins
-codex plugin install hiddendoor@hiddendoor
+codex plugin add hiddendoor@hiddendoor
 ```
