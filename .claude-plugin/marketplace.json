@@ -1,5 +1,6 @@
 {
   "name": "hiddendoor",
+  "description": "Plugins for creating and exploring interactive story worlds with Hidden Door.",
   "owner": { "name": "Hidden Door" },
   "plugins": [
     {
