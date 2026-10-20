@@ -11,7 +11,6 @@ Includes the Hidden Door MCP connection, and related skills.
 - **importing-worlds**: Import existing writing or manuscripts into a world draft.
 - **developing-worlds**: Expand, revise, or diagnose an existing world.
 - **walking-through-worlds**: Explore a saved world's characters, player possibilities, storylines, and rules.
-- **imagining-stories**: Help creators play out a what-if story in an existing game and save approved results as history.
 
 ## Install in Claude Code
 
