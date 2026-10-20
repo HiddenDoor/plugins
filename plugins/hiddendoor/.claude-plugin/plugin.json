@@ -8,5 +8,7 @@
   "author": { "name": "Hidden Door", "url": "https://www.hiddendoor.co" },
   "license": "Apache-2.0",
   "homepage": "https://www.hiddendoor.co/mcp",
+  "privacyPolicyUrl": "https://www.hiddendoor.co/legal/privacy",
+  "termsOfServiceUrl": "https://www.hiddendoor.co/legal/terms",
   "repository": "https://github.com/HiddenDoor/plugins"
 }
