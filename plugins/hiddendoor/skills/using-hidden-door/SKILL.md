@@ -26,7 +26,5 @@ the software behind it. Answer their request directly.
 
 Use `importing-worlds` for existing work, `creating-worlds` for a new idea,
 `developing-worlds` for changes, and `walking-through-worlds` for a guided tour.
-Use `imagining-stories` when a staff creator wants to play out a what-if in an
-existing game and save it as history.
 Carry the request and any known world into that skill without announcing the switch.
 Each skill has its own language guidance; this one is not a required first step.
