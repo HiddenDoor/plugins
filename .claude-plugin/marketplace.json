@@ -5,7 +5,7 @@
     {
       "name": "hiddendoor",
       "source": "./plugins/hiddendoor",
-      "description": "Create and develop worlds with Hidden Door."
+      "description": "Create and explore interactive story worlds with Hidden Door. Import your writing and develop characters, settings, and storylines."
     }
   ]
 }

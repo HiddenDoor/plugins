@@ -4,13 +4,8 @@ Create and develop Hidden Door worlds from your AI harness.
 
 Includes the Hidden Door MCP connection, and related skills.
 
-## Included skills
-
-- **using-hidden-door**: General guidance for using Hidden Door and choosing a workflow.
-- **creating-worlds**: Develop a new idea through previews, then create an approved draft.
-- **importing-worlds**: Import existing writing or manuscripts into a world draft.
-- **developing-worlds**: Expand, revise, or diagnose an existing world.
-- **walking-through-worlds**: Explore a saved world's characters, player possibilities, storylines, and rules.
+See the [plugin guide](plugins/hiddendoor/README.md) for workflows, example prompts,
+and account requirements.
 
 ## Install in Claude Code
 
