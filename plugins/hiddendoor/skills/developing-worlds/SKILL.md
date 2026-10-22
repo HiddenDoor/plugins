@@ -89,9 +89,8 @@ do not authorise edits. Keep newly invented material distinguishable from existi
   linking to them. Do not invent IDs or link a new record by name alone.
 - Create and update schemas can differ. A character may need an initial create
   followed by an update for its detailed fields; use the returned record ID.
-- Respect derived, opaque and round-trip field annotations. Do not fabricate an
-  avatar payload. Current MCP tools do not expose the editor's avatar-generation
-  operation; leave existing artwork alone and explain when Atlas is needed.
+- Respect derived, opaque and round-trip field annotations. Use documented
+  portrait URL fields; do not invent avatar asset IDs or layer payloads.
 - Read documented save side effects. For example, archetype creation can invoke
   model-based parsing when structured fields are omitted. Do not assume a direct
   write cannot generate content, especially when preserving imported canon.
@@ -99,6 +98,16 @@ do not authorise edits. Keep newly invented material distinguishable from existi
 Save dependent edits in order. The calls are not a single transaction; if one
 fails, retain the saved IDs and determine which changes succeeded. Do not claim
 the whole request was rolled back or blindly repeat record creation.
+
+## Canon character portraits
+
+Ask whether the creator has a portrait URL or wants existing game artwork, unless
+already clear. Include appearance at creation; without supplied artwork, creation
+attempts avatar assignment. Use the live entity schema to set a custom URL or
+call `generate`, which selects existing art rather than drawing a new image.
+Warn and obtain permission before replacing any saved portrait; only then set
+`replace_existing: true`. Never treat an overwrite warning as permission.
+Portraits and appearance text do not update each other.
 
 ## Verify and report
 
