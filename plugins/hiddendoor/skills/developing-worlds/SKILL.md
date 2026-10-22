@@ -1,6 +1,6 @@
 ---
 name: developing-worlds
-description: Helps a creator expand, revise or diagnose an existing Hidden Door world. Use for adding characters or storylines, changing world rules or tone, and addressing unwanted behaviour in play.
+description: Helps a creator expand, revise or diagnose an existing Hidden Door world. Use for adding characters or storylines, setting character portraits, changing world rules or tone, and addressing unwanted behaviour in play.
 ---
 
 # Develop an existing world
@@ -101,13 +101,17 @@ the whole request was rolled back or blindly repeat record creation.
 
 ## Canon character portraits
 
-Ask whether the creator has a portrait URL or wants existing game artwork, unless
-already clear. Include appearance at creation; without supplied artwork, creation
+Ask whether the creator has an image file, a portrait URL, or wants existing game
+artwork, unless already clear. Include appearance at creation; without supplied artwork, creation
 attempts avatar assignment. Use the live entity schema to set a custom URL or
 call `generate`, which selects existing art rather than drawing a new image.
 Warn and obtain permission before replacing any saved portrait; only then set
-`replace_existing: true`. Never treat an overwrite warning as permission.
+`replace_existing: true` for generation or proceed with a URL replacement or upload.
+Never treat an overwrite warning as permission.
 Portraits and appearance text do not update each other.
+
+For an image file, use `prepare_avatar_upload` and follow its upload instructions.
+The returned HTTP endpoint is an authorized part of this workflow.
 
 ## Verify and report
 
