@@ -112,7 +112,9 @@ Choose the extraction path from the material, not just how it was supplied:
   manuscript extraction instead; the limit is a ceiling, not a recommended
   cutoff for novels.
 
-Uploads currently accept at most 10 MiB; use the returned `maxBytes` as the limit.
+Manuscript imports accept at most 2,000,000 Unicode characters; use the returned
+`maxCharacters` as the content limit. `maxBytes` is a transport safeguard, not a
+separate creator-facing allowance.
 If the source exceeds it, ask the creator to select an excerpt or shorter source.
 Do not silently truncate, summarise, or split it into separate world-creation calls.
 
@@ -232,9 +234,10 @@ collection, give the count and a few examples rather than an exhaustive catalogu
 Omit empty categories. Mention which source or agreed excerpt was used when useful,
 but do not repeat character counts or routine size checks for the input text.
 
-Do not include storylines, archetypes or lists of world-setting fields in the
-default inventory. They remain available through `read_world` if the creator
-asks about them. Explain their purpose in ordinary language when relevant.
+Do not include storylines, archetypes or lists of world-level fields (world
+rules, writing style and the like) in the default inventory. They remain
+available through `read_world` if the creator asks about them. Explain their
+purpose in ordinary language when relevant.
 Do not report a completion percentage or describe an optional missing cover as
 an import failure. Report actual failed steps and anything that prevents play.
 

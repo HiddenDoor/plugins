@@ -62,6 +62,8 @@ https://www.hiddendoor.co/mcp for setup and sign-in. Never request pasted creden
    counts where useful. The tool returns a vision and category counts, not the
    full extracted records. Do not claim unseen characters, locations or storylines
    are in the preview. Distinguish the tool's result from your own proposals.
+   `storyIdeas` is raw plot material, not a storyline count: creation turns it
+   into about three storylines, so fewer storylines than ideas is expected.
 3. Invite a response to the preview: what to keep, what to change, or whether to
    create it. Answer questions and offer suggestions where they help the creator
    decide. For a revision, combine the original idea, preview details they want
