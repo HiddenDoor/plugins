@@ -69,6 +69,9 @@ not assumed to require changing the world's premise or cast.
 Check whether a field affects play, only display copy, or only future generation.
 Check any enable switches documented by the reference. Do not promise a prose
 instruction is a hard mechanical guarantee or that an edit changes a running game.
+Before declaring a request unsupported, check the live reference for required
+setup and offer that change when feasible. Distinguish unverified results from
+unavailable capabilities.
 
 For a clear, narrow edit request, make the authorised change without another
 confirmation. For an open-ended diagnosis or substantial rewrite, show the

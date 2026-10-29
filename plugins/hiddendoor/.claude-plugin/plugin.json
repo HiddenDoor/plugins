@@ -2,7 +2,7 @@
   "name": "hiddendoor",
   "displayName": "Hidden Door",
   "icon": "./logo.png",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Create and explore interactive story worlds with Hidden Door. Import your writing and develop characters, settings, and storylines.",
   "keywords": ["world-building", "creative-writing", "fiction", "storytelling", "characters"],
   "author": { "name": "Hidden Door", "url": "https://www.hiddendoor.co" },
