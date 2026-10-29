@@ -64,6 +64,8 @@ https://www.hiddendoor.co/mcp for setup and sign-in. Never request pasted creden
    are in the preview. Distinguish the tool's result from your own proposals.
    `storyIdeas` is raw plot material, not a storyline count: creation turns it
    into about three storylines, so fewer storylines than ideas is expected.
+   Include the requested visual style, or propose one suited to the world for
+   approval alongside the preview. Distinguish your proposal from extracted content.
 3. Invite a response to the preview: what to keep, what to change, or whether to
    create it. Answer questions and offer suggestions where they help the creator
    decide. For a revision, combine the original idea, preview details they want
@@ -91,6 +93,10 @@ Inspect the result and use `read_world` to check the saved draft. Discover
 available resources through `describe_world_fields` when needed. Check important
 agreed details and any reported problems. A successful response does not by itself
 prove that every storyline or avatar was saved, or that playtesting will succeed.
+
+Ensure the agreed visual style is saved, correcting it if needed.
+If the creator wants to use an image as the world's banner, follow the hosting
+guidance in `developing-worlds`.
 
 If creation returns an incomplete draft, retain its world ID and inspect it.
 Do not create another world to repair the first. After a lost response without

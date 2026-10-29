@@ -1,6 +1,6 @@
 ---
 name: developing-worlds
-description: Helps a creator expand, revise or diagnose an existing Hidden Door world. Use for adding characters or storylines, setting character portraits, changing world rules or tone, and addressing unwanted behaviour in play.
+description: Helps a creator expand, revise or diagnose an existing Hidden Door world. Use for adding characters or storylines, setting portraits, visual style or banners, changing world rules or tone, and addressing unwanted behaviour in play.
 ---
 
 # Develop an existing world
@@ -102,7 +102,19 @@ Save dependent edits in order. The calls are not a single transaction; if one
 fails, retain the saved IDs and determine which changes succeeded. Do not claim
 the whole request was rolled back or blindly repeat record creation.
 
-## Canon character portraits
+## Field-specific guidance
+
+### Visual style and banners
+
+When updating a world, check whether it has a visual style. If missing, propose
+one and save it once agreed, without blocking unrelated edits.
+
+For an attached banner, check whether the creator already has somewhere to host
+it and tools available to upload it. Agree on the destination and public access,
+then verify a durable, publicly accessible image URL before using it. If hosting
+is unavailable, ask the creator for a hosted image URL.
+
+### Canon character portraits
 
 Ask whether the creator has an image file, a portrait URL, or wants existing game
 artwork, unless already clear. Include appearance at creation; without supplied artwork, creation

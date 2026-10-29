@@ -174,6 +174,11 @@ Do not load a large manuscript into the conversation as an automatic workaround.
    This is a check of what saved, not a comparison against the original work.
    Do not perform a source-fidelity audit as part of importing.
 
+Check the saved visual style using `developing-worlds` guidance, and follow its
+hosting guidance for requested banners. Preserve extracted art direction; if
+absent, offer a proposed style after reporting the import, without adding an
+approval gate to importing or inventing style in the source text.
+
 ## Handle incomplete or failed imports
 
 For a failed manuscript extraction, report the failure and try
