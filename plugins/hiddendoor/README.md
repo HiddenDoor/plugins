@@ -10,7 +10,8 @@ This plugin bundles the Hidden Door MCP connection with workflow skills.
 - **Import your writing:** turn existing stories, setting notes, or manuscripts
   into a world draft.
 - **Develop a world:** revise characters, locations, storylines, tone, and rules
-  in an existing world.
+  in an existing world, and give characters portraits from Hidden Door's art
+  library or your own images.
 - **Explore a world:** take a guided tour of its characters, playable roles, and
   storylines, and make changes as you go.
 - **Get oriented:** ask questions about Hidden Door and choose a workflow.
@@ -21,6 +22,7 @@ This plugin bundles the Hidden Door MCP connection with workflow skills.
 - “Import my draft worldbuilding notes into a Hidden Door world.”
 - “Walk me through the characters and storylines in my world.”
 - “Make this character more suspicious of strangers, but keep her backstory.”
+- “Pick a portrait from the library for the innkeeper.”
 
 ## Setup
 
