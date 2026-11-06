@@ -119,9 +119,9 @@ is unavailable, ask the creator for a hosted image URL.
 Ask whether the creator has an image file, a portrait URL, or wants existing game
 artwork, unless already clear. Include appearance at creation; without supplied artwork, creation
 attempts avatar assignment. Use the live entity schema to set a custom URL or
-call `generate`, which selects existing art rather than drawing a new image.
+call `fill_avatar`, which selects existing art rather than drawing a new image.
 Warn and obtain permission before replacing any saved portrait; only then set
-`replace_existing: true` for generation or proceed with a URL replacement or upload.
+`replace_existing: true` for `fill_avatar` or proceed with a URL replacement or upload.
 Never treat an overwrite warning as permission.
 Portraits and appearance text do not update each other.
 
