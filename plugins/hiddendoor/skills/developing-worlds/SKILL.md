@@ -86,8 +86,15 @@ do not authorise edits. Keep newly invented material distinguishable from existi
   current list and retain entries outside the requested change. Follow the
   reference's nested-object and clearing rules instead of guessing with nulls.
 - For replacements, include all existing writable values that must survive.
-  In particular, storyline replacement resets omitted optional fields. Preserve
-  beat cast values and omit read-only scope and beat IDs as the tool instructs.
+  In particular, storyline replacement resets omitted optional fields. Send each
+  beat's `cast` back unchanged (it is unused, does nothing and must never be
+  set) and omit read-only scope and beat IDs as the tool instructs.
+- Keep two storyline fields apart. A beat's `entity_ids` (its chapter cast)
+  guarantees those canon characters, places and items appear in that chapter,
+  and only storylines that list them can introduce them. The storyline's
+  `cast_guidance` is free-text notes for the narrator: it guarantees and
+  reserves nothing. Tell the creator what a change will do in play, then set
+  the field that does it.
 - Use IDs returned by reads or creates for links. Create referenced records before
   linking to them. Do not invent IDs or link a new record by name alone.
 - Create and update schemas can differ. A character may need an initial create
