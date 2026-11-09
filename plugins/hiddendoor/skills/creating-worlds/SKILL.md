@@ -41,6 +41,9 @@ ask whether the creator wants to preserve existing material or develop a new ide
   media, prepare a text description of the relevant content and what the creator
   wants to draw from it. Separate observations from suggested additions; do not
   silently turn an image into an elaborate setting of your own.
+- When the creator names the world, put the title in the input as its own line
+  (“Title: …”). The preview keeps a stated title; check the returned title, and
+  if it differs, say so rather than present it as theirs.
 - Ask a question first only when needed to understand the request or obtain usable
   input. If the creator wants to discuss ideas before seeing a preview, follow
   that conversation; do not impose a brainstorming stage on every request.
@@ -63,18 +66,27 @@ https://www.hiddendoor.co/mcp for setup and sign-in. Never request pasted creden
    full extracted records. Do not claim unseen characters, locations or storylines
    are in the preview. Distinguish the tool's result from your own proposals.
    `storyIdeas` is raw plot material, not a storyline count: creation turns it
-   into up to about three storylines (two for a small premise), so fewer
+   into two storylines by default (three when the material holds a separate
+   conflict), so fewer
    storylines than ideas is expected.
    Include the requested visual style, or propose one suited to the world for
    approval alongside the preview. Distinguish your proposal from extracted content.
 3. Invite a response to the preview: what to keep, what to change, or whether to
    create it. Answer questions and offer suggestions where they help the creator
-   decide. For a revision, combine the original idea, preview details they want
-   to retain, and requested changes into a new text input. Remove rejected ideas
-   and call `preview_world` again; the tool does not see the conversation.
-   There is no current MCP tool for editing a saved preview. Each new call returns
-   a new `previewId`; show that result before creating, and do not use an older ID
-   with rejected details. Check for unintended changes when presenting the revision.
+   decide. Make every requested change to the saved preview with `edit_preview`,
+   which changes only the fields named: read the full preview first
+   (`read_preview` with `includeContent: true`) for current names, and check
+   other fields the change contradicts (removing magic may leave magic in `lore`)
+   and offer to change them too. Show the creator the returned `changes`, each
+   field's before and after, including prose a rename rewrote. Reread each
+   rewritten field before showing it; if a replacement hit the wrong word,
+   fix that field with another `edit_preview`. If a rename is
+   refused because another character, location or item already has that name,
+   ask whether to keep both under a distinguishing name or replace the existing
+   one (its remove goes before the rename in the same call, and references to it
+   are dropped). Call `preview_world` again only when the creator
+   brings new source material; it extracts a new preview with a new `previewId`,
+   so do not use an older ID with rejected details.
 4. Once the creator approves the current preview, call
    `create_world({ previewId: <approved preview ID> })`. Discussion or approval
    of an earlier version is not approval of a revised preview.

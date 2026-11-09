@@ -55,7 +55,7 @@ that fits the conversation, skip empty topics, and read more as each topic arise
   from settings that guide play.
 - **People, places and things.** Show how named characters, locations and items
   establish the world. Pick a few useful examples rather than repeat the whole
-  inventory. Explain factions through their members, interests and conflicts.
+  inventory.
 - **Who players can be.** Explain the roles and character choices offered to
   players. Distinguish those choices from named characters already in the world.
 - **Shared kinds and qualities.** Introduce archetypes through actual examples:
