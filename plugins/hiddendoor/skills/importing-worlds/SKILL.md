@@ -148,13 +148,13 @@ upload. Use the harness's approval mechanism; do not bypass a blocked upload.
    it arrived. If upload authorization expired before submission, request fresh
    authorization.
 4. Call `get_manuscript_status({ jobId })`. While `status` is `pending` or
-   `running`, wait about 10 seconds between checks, even when progress is
+   `running` (and `stalled` is not true), wait about 10 seconds between checks, even when progress is
    unchanged. Use a wait facility when available; do not loop
    immediate calls if the harness cannot wait. Extraction continues server-side
    even if the conversation ends. Report actual progress or delays briefly.
 5. When `status` is `done`, use `predraft_id` as `previewId` below. Completion of
-   extraction is not completion of the world draft. For `failed`, follow recovery
-   below. Do not create a world without a returned preview ID.
+   extraction is not completion of the world draft. For `failed`, or `stalled: true` (a running job that lost its worker), follow
+   recovery below. Do not create a world without a returned preview ID.
 
 If the harness cannot send file bytes over HTTP, explain the limitation and ask
 for an environment that can upload, or a shorter pasted text for `preview_world`.
@@ -181,7 +181,8 @@ approval gate to importing or inventing style in the source text.
 
 ## Handle incomplete or failed imports
 
-For a failed manuscript extraction, report the failure and try
+For a failed or stalled manuscript extraction (`stalled` is true when a running job lost
+its worker), report the problem and try
 `resume_manuscript_extraction({ jobId })` once as part of the requested import,
 then follow status again. This reuses the stored text and completed work. If it
 fails again, report the problem rather than repeatedly resuming. An active-worker

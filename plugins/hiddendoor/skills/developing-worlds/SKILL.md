@@ -105,6 +105,10 @@ do not authorise edits. Keep newly invented material distinguishable from existi
   model-based parsing when structured fields are omitted. Do not assume a direct
   write cannot generate content, especially when preserving imported canon.
 
+Deleting a record asks the creator to approve in a confirmation prompt. If their
+client can't show one, or they decline, nothing is deleted: tell them they can
+delete it in the Atlas editor, and don't retry unless they ask again.
+
 Save dependent edits in order. The calls are not a single transaction; if one
 fails, retain the saved IDs and determine which changes succeeded. Do not claim
 the whole request was rolled back or blindly repeat record creation.
@@ -126,9 +130,10 @@ is unavailable, ask the creator for a hosted image URL.
 Ask whether the creator has an image file, a portrait URL, or wants existing game
 artwork, unless already clear. Include appearance at creation; without supplied artwork, creation
 attempts avatar assignment. Use the live entity schema to set a custom URL or
-call `fill_avatar`, which selects existing art rather than drawing a new image.
-Warn and obtain permission before replacing any saved portrait; only then set
-`replace_existing: true` for `fill_avatar` or proceed with a URL replacement or upload.
+call `fill_avatar` with values `{replace_existing: false}`; it selects existing art
+rather than drawing a new image. Warn and obtain permission before replacing any
+saved portrait; only then send `{replace_existing: true}` or proceed with a URL
+replacement or upload.
 Never treat an overwrite warning as permission.
 Portraits and appearance text do not update each other.
 
