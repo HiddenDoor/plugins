@@ -14,6 +14,7 @@ This plugin bundles the Hidden Door MCP connection with workflow skills.
   library or your own images.
 - **Explore a world:** take a guided tour of its characters, playable roles, and
   storylines, and make changes as you go.
+- **Read your stories back:** ask how a playtest or a story you played went.
 - **Get oriented:** ask questions about Hidden Door and choose a workflow.
 
 ## Try asking
@@ -23,6 +24,14 @@ This plugin bundles the Hidden Door MCP connection with workflow skills.
 - “Walk me through the characters and storylines in my world.”
 - “Make this character more suspicious of strangers, but keep her backstory.”
 - “Pick a portrait from the library for the innkeeper.”
+- “How did my last playtest go? Which characters showed up?”
+
+## Learn more
+
+- [MCP overview](https://www.hiddendoor.co/mcp): what you can do, and setup
+- [Guides](https://www.hiddendoor.co/mcp/guides): longer projects, step by step
+- [Skills and tools](https://www.hiddendoor.co/mcp/tools): everything the plugin can do
+- [Troubleshooting](https://www.hiddendoor.co/mcp/help) and [FAQ](https://www.hiddendoor.co/mcp/faq)
 
 ## Setup
 

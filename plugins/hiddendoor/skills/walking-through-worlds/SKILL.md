@@ -98,4 +98,5 @@ specific obstacle and let the creator choose whether to continue the tour.
 The creator can skip topics, stop, or move into a longer editing session at any
 point. Close with a brief recap of requested changes, if any, and the draft link.
 Use `https://www.hiddendoor.co/create/{worldId}/vision` unless another environment
-is explicitly configured. Do not publish the world or launch a playtest.
+is explicitly configured. Do not publish the world or launch a playtest. If the creator has
+playtested this world, offer to look at how a recent playtest went.
