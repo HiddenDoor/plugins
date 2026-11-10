@@ -7,6 +7,11 @@ Includes the Hidden Door MCP connection, and related skills.
 See the [plugin guide](plugins/hiddendoor/README.md) for workflows, example prompts,
 and account requirements.
 
+**For agents:** to install and connect Hidden Door in any app (Claude, Claude Code,
+Codex, ChatGPT, Cursor, VS Code and others), follow the
+[setup instructions for agents](https://www.hiddendoor.co/mcp/setup.md).
+To set it up without the plugin, see [hiddendoor.co/mcp](https://www.hiddendoor.co/mcp#set-it-up).
+
 ## Install in Claude Code
 
 Run:
