@@ -123,10 +123,7 @@ the whole request was rolled back or blindly repeat record creation.
 When updating a world, check whether it has a visual style. If missing, propose
 one and save it once agreed, without blocking unrelated edits.
 
-For an attached banner, check whether the creator already has somewhere to host
-it and tools available to upload it. Agree on the destination and public access,
-then verify a durable, publicly accessible image URL before using it. If hosting
-is unavailable, ask the creator for a hosted image URL.
+For a banner image file, use `prepare_banner_upload` with the saved world's ID and follow its upload instructions. The returned HTTP endpoint is an authorized part of this workflow. Warn and obtain permission before replacing an existing banner; replacement clears its previous crop. For an already-hosted image, use the live world schema to set its URL and clear the old crop when replacing the image.
 
 ### Canon character portraits
 

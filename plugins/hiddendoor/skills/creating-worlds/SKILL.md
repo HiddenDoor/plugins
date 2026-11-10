@@ -108,7 +108,7 @@ agreed details and any reported problems. A successful response does not by itse
 prove that every storyline or avatar was saved, or that playtesting will succeed.
 
 Ensure the agreed visual style is saved, correcting it if needed.
-If the creator wants to use an image as the world's banner, follow the hosting
+If the creator wants to use an image as the world's banner, follow the banner
 guidance in `developing-worlds`.
 
 If creation returns an incomplete draft, retain its world ID and inspect it.
