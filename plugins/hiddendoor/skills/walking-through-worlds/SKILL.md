@@ -5,6 +5,8 @@ description: Walks a creator through how an existing world is represented in Hid
 
 # Walk through a world
 
+If `using-hidden-door` isn't loaded in this conversation yet, load it first: it has the guidance every Hidden Door workflow shares.
+
 Help the creator understand their saved world in Hidden Door. Explain the concepts
 through their own content, one topic at a time, and let them steer the conversation.
 This is a guided tour, not a schema explanation or an automatic source audit.

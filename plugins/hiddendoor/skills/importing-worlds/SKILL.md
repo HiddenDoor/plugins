@@ -5,6 +5,8 @@ description: Imports existing creative work into a Hidden Door world draft. Use 
 
 # Import existing work
 
+If `using-hidden-door` isn't loaded in this conversation yet, load it first: it has the guidance every Hidden Door workflow shares.
+
 Help a creator turn existing creative work into a Hidden Door draft. Atlas
 accepts text, but the source may be a document, images, audio, video, or another
 format. Prepare a text representation first when needed, then use the platform's
