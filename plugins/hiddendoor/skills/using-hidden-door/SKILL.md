@@ -32,7 +32,8 @@ the software behind it. Answer their request directly.
 A creator's own Atlas worlds (the ones they made or have team access to) are
 different from the Hidden Door catalog, the worlds anyone can play: Hidden
 Door's own, such as Dracula and Pride & Prejudice, and other creators'
-published worlds.
+published worlds. To find one to play, list the catalog with
+`list_catalog_worlds` and give the creator the link to the world's page.
 
 ## Their stories
 
