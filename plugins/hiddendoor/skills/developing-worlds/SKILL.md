@@ -120,6 +120,15 @@ the whole request was rolled back or blindly repeat record creation.
 
 ## Field-specific guidance
 
+### What the creator rules out
+
+When the creator rules something out ("no mysteries", "nobody else on the
+mountain", "no romance"), save it in the world's storytelling guidance, even
+when nothing in the world contains it yet. Story generation adds material the
+world doesn't have, so an exclusion nobody wrote down doesn't hold in play.
+State it plainly and name what it covers, for example: "This is not a mystery
+story: no hidden caches, journals, clues or secrets to uncover."
+
 ### Visual style and banners
 
 When updating a world, check whether it has a visual style. If missing, propose
