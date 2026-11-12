@@ -54,6 +54,22 @@ ask whether the creator wants to preserve existing material or develop a new ide
 Let the preview supply the initial proposal. The assistant's role is to help the
 creator understand and shape it, not to write a competing proposal beforehand.
 
+## The preview is the idea; the draft is the world
+
+The preview is only the idea: vision, tone, setting and visual style. Creating it
+makes the draft world, which has characters, places and storylines, and where
+every later change is saved to the world itself. Say so plainly when showing the
+first preview, for example: "This is the idea. Once we create the draft, we can
+build out the world itself, and changes go straight into it."
+
+Revise the preview only for what shapes the whole world: premise, tone, setting,
+who the player is, title and visual style. Once those feel right, suggest
+creating the draft, even if the creator has more in mind. When they ask for
+specific storylines, scenes, characters or places, note them and suggest creating
+the draft now so they can be added to the world directly; add them after
+creation (below). Do not keep packing detail into the preview: creation merges
+or leaves out some story ideas, so detail added there may not survive.
+
 ## Show and revise the preview
 
 Use the authenticated Hidden Door MCP connection. Names below are unqualified;
@@ -119,7 +135,20 @@ an ID, check `list_worlds` and inspect plausible matches before considering a
 retry. If you cannot establish what saved, explain the uncertainty and ask before
 risking a duplicate. Do not delete drafts during recovery.
 
-Finish with the draft link and a brief account of the result and any known gaps.
+Compare the draft with what the creator asked for, and act on any difference
+rather than reporting it as a gap or shortfall:
+
+- Something they asked for that the draft lacks or contradicts, such as a
+  storyline or scene they described or the tone they set: make the change with
+  `developing-worlds`, then say what you added or changed.
+- A choice they haven't made, such as whether failing can end the story: ask
+  it as a question ("Do you want death from failure on the table in the
+  opening storyline?").
+- Further building: offer it as a next step, for example: "Now that we have a
+  draft, I can add more storylines, starting with the ones we discussed. Want to
+  add any fresh ideas too, or start with those?"
+
+Finish with the draft link and a brief account of what the world now has.
 Use the returned absolute URL if supplied. Otherwise, prepend
 `https://www.hiddendoor.co` to the returned `editorPath`, or use
 `https://www.hiddendoor.co/create/{worldId}/vision` with the saved world ID.
