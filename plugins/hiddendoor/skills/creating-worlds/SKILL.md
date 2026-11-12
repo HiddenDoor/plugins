@@ -5,6 +5,8 @@ description: Helps a creator turn an idea into a Hidden Door world by generating
 
 # Create a world together
 
+If `using-hidden-door` isn't loaded in this conversation yet, load it first: it has the guidance every Hidden Door workflow shares.
+
 Use Hidden Door's preview to give the creator something concrete to respond to.
 Discuss what it returns, carry their feedback into revisions, and create the
 draft when they approve it. Explain the world in ordinary language, not Atlas fields.

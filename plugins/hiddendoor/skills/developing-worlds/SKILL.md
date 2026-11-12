@@ -5,6 +5,8 @@ description: Helps a creator expand, revise or diagnose an existing Hidden Door 
 
 # Develop an existing world
 
+If `using-hidden-door` isn't loaded in this conversation yet, load it first: it has the guidance every Hidden Door workflow shares.
+
 Translate the creator's intention into focused changes to a saved world. Read
 what exists, learn which fields control the requested behaviour, and preserve
 unrelated content. The creator should not need to know the Atlas data model.
