@@ -149,7 +149,10 @@ upload. Use the harness's approval mechanism; do not bypass a blocked upload.
    do not repeat a POST after a lost response. Use job listing to check whether
    it arrived. If upload authorization expired before submission, request fresh
    authorization.
-4. Call `get_manuscript_status({ jobId })`. While `status` is `pending` or
+4. Call `get_manuscript_status({ jobId })`. If `status` is `needs_choice`, list
+   the books by title and ask the creator which one book to import. Do not choose
+   for them. Call `choose_manuscript_book({ jobId, bookIndex })` with the index
+   of their selection, then continue polling. Whole-series import is not yet available. While `status` is `pending` or
    `running` (and `stalled` is not true), wait about 10 seconds between checks, even when progress is
    unchanged. Use a wait facility when available; do not loop
    immediate calls if the harness cannot wait. Extraction continues server-side
