@@ -91,6 +91,8 @@ and checking the result. Afterward, briefly describe what changed and continue t
 walkthrough from where it paused, using the saved result rather than stale content.
 Do not announce the skill switch or ask for another confirmation of a clear edit.
 
+A creator ruling something out ("no secrets", "no mysteries") is a change
+request even when the world has none yet: save it with `developing-worlds`.
 Questions and reactions alone do not authorise changes. Do not automatically
 correct the world while explaining it. If an edit cannot be completed, explain the
 specific obstacle and let the creator choose whether to continue the tour.
