@@ -77,7 +77,7 @@ clients may prefix them. If the connection is missing, direct the creator to
 https://www.hiddendoor.co/mcp for setup and sign-in. Never request pasted credentials.
 
 1. Tell the creator you are preparing a preview and call
-   `preview_world({ writing: <creator input or prepared text> })`.
+   `preview_world({ writing: <creator input or prepared text>, intent: "adapt" })`.
    Keep the input within the tool's advertised limit, currently 256,000 characters.
 2. Show the returned vision in readable prose and explain the returned content
    counts where useful. The tool returns a vision and category counts, not the

@@ -124,7 +124,7 @@ Do not silently truncate, summarise, or split it into separate world-creation ca
 
 ### Shorter stories and setting notes
 
-Call `preview_world({ writing: <prepared source text> })`. Check that extraction
+Call `preview_world({ writing: <prepared source text>, intent: "import" })`. Check that extraction
 succeeded and returned a `previewId`. If it fails, report the failure and stop.
 
 ### Manuscript extraction
@@ -137,8 +137,8 @@ technical details only when asked or when they are necessary to resolve a blocke
 upload. Use the harness's approval mechanism; do not bypass a blocked upload.
 
 1. Prepare the text file before calling `prepare_manuscript_upload`, because
-   upload authorization expires after 15 minutes. Supply an optional `title`
-   only when known from the creator or file metadata.
+   upload authorization expires after 15 minutes. Pass `intent: "import"`.
+   Supply an optional `title` only when known from the creator or file metadata.
 2. Send an HTTP POST to the returned `url` with the returned `headers`, using the
    file bytes as the raw request body. Do not send JSON or multipart form data.
    With a shell, use `curl --data-binary @<file>` and those headers, without
@@ -152,7 +152,7 @@ upload. Use the harness's approval mechanism; do not bypass a blocked upload.
 4. Call `get_manuscript_status({ jobId })`. If `status` is `needs_choice`, list
    the books by title and ask the creator which one book to import. Do not choose
    for them. Call `choose_manuscript_book({ jobId, bookIndex })` with the index
-   of their selection, then continue polling. Whole-series import is not yet available. While `status` is `pending` or
+   of their selection, then continue polling. A world is built from one book. While `status` is `pending` or
    `running` (and `stalled` is not true), wait about 10 seconds between checks, even when progress is
    unchanged. Use a wait facility when available; do not loop
    immediate calls if the harness cannot wait. Extraction continues server-side
