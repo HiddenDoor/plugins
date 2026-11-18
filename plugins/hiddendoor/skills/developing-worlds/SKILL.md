@@ -148,6 +148,13 @@ replacement or upload.
 Never treat an overwrite warning as permission.
 Portraits and appearance text do not update each other.
 
+When characters across the world are given clothing that does not belong there,
+the cause is usually the world's list of fitting looks, not each portrait. Read
+`lore_physics.look_tags` in `describe_world_fields`, agree the change with the
+creator, and replace the list rather than replacing portraits one by one. The
+new list applies to characters made afterwards; existing portraits stay as they
+are until replaced, which needs the creator's permission as above.
+
 For an image file, use `prepare_avatar_upload` and follow its upload instructions.
 The returned HTTP endpoint is an authorized part of this workflow.
 
