@@ -99,8 +99,8 @@ do not authorise edits. Keep newly invented material distinguishable from existi
   the field that does it.
 - Use IDs returned by reads or creates for links. Create referenced records before
   linking to them. Do not invent IDs or link a new record by name alone.
-- Create and update schemas can differ. A character may need an initial create
-  followed by an update for its detailed fields; use the returned record ID.
+- Add a character, place or item with one create that carries every field you
+  have; create accepts the same fields as update.
 - Respect derived, opaque and round-trip field annotations. Use documented
   portrait URL fields; do not invent avatar asset IDs or layer payloads.
 - Read documented save side effects. For example, archetype creation can invoke
